@@ -6,6 +6,8 @@ import ScrollBox from './component/ScrollBox';
 import InteractionSample from './component/InterationSample'
 import LifeCycleSample from './component/LifeCycleSample'
 import CssModule from './component/CssModule'
+import Button from './component/Button'
+import StyledButton from './component/StyledButton'
 
 function getRamdomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -36,6 +38,8 @@ class App extends Component {
           <button onClick = {this.handleClick}>랜덤 색상</button>
           <LifeCycleSample color = {this.state.color}/>
         <CssModule/>
+        <Button>버튼</Button>
+        <StyledButton big>버튼</StyledButton>
       </div>
     );
   }
